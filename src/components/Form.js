@@ -31,12 +31,14 @@ const Form = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) => {
   };
 
   return (
-    <form onSubmit={onFormSubmit}>
-      <input type="text" placeholder="Add Todo-List..." className="task-input" value={input} required onChange={onInputChange} autoFocus />
-      <button className="button-add" type="Submit">
-        {editTodo ? "Ok" : "Add"}
-      </button>
-    </form>
+    <div className="form-list">
+      <form onSubmit={onFormSubmit}>
+        <input type="text" placeholder="Add Todo-List..." className="task-input" value={input} required onChange={onInputChange} autoFocus />
+        <button className="button-add" type="Submit">
+          {editTodo ? "Ok" : "Add"}
+        </button>
+      </form>
+    </div>
   );
 };
 

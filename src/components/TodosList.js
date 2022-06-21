@@ -21,7 +21,7 @@ const TodosList = ({ todos, setTodos, setEditTodo }) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
   return (
-    <div>
+    <div className="container-list">
       {todos.map((todo) => (
         <li className="list-item" key={todo.id}>
           <input type="text" value={todo.title} className={`list ${todo.completed ? "complete" : ""}`} onChange={(event) => event.preventDefault()} />

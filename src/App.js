@@ -17,15 +17,9 @@ const App = () => {
   return (
     <div className="container">
       <div className="app-wrapper">
-        <div>
-          <Header />
-        </div>
-        <div>
-          <Form input={input} setInput={setInput} todos={todos} setTodos={setTodos} editTodo={editTodo} setEditTodo={setEditTodo} />
-        </div>
-        <div>
-          <TodosList todos={todos} setTodos={setTodos} setEditTodo={setEditTodo} />
-        </div>
+        <Header />
+        <Form input={input} setInput={setInput} todos={todos} setTodos={setTodos} editTodo={editTodo} setEditTodo={setEditTodo} />
+        <TodosList todos={todos} setTodos={setTodos} setEditTodo={setEditTodo} />
       </div>
     </div>
   );
