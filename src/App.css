@@ -30,6 +30,21 @@
   text-align: center;
 }
 
+.credit {
+  color: #fff;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.credit a {
+  color: #fff;
+}
+
+.credit a:hover {
+  color: blue;
+  font-size: 18px;
+}
+
 .form-list {
   display: flex;
   justify-content: center;
